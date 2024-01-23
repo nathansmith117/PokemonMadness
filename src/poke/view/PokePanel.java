@@ -11,6 +11,10 @@ public class PokePanel extends JPanel
 	{
 		super();
 		this.app = app;
+		
+		setupPanel();
+		setupListeners();
+		setupLayout();
 	}
 	
 	private void setupPanel()
