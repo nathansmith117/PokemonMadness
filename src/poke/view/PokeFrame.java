@@ -19,8 +19,7 @@ public class PokeFrame extends JFrame
 	
 	private void setupFrame()
 	{
-		setContentPane(panel);
-		
+		setContentPane(panel);		
 		setSize(1024, 768);
 		setTitle("Pokemon Madness");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
