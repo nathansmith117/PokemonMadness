@@ -1,6 +1,8 @@
 package poke.model.monsters;
 
-public class Vulpix extends Pokemon
+import poke.model.types.Fire;
+
+public class Vulpix extends Pokemon implements Fire
 {
 	public Vulpix()
 	{
@@ -15,5 +17,12 @@ public class Vulpix extends Pokemon
 	public Vulpix(int number, String name)
 	{
 		super(number, name);
+	}
+	
+	public int fartFire()
+	{
+		int smellySmellyFart = 25;
+		
+		return smellySmellyFart;
 	}
 }

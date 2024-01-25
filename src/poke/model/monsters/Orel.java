@@ -1,6 +1,9 @@
 package poke.model.monsters;
 
-public class Orel extends Pokemon
+import poke.model.types.Normal;
+import poke.model.types.Holy;
+
+public class Orel extends Pokemon implements Normal, Holy
 {
 	public Orel()
 	{
@@ -15,5 +18,17 @@ public class Orel extends Pokemon
 	public Orel(int number, String name)
 	{
 		super(number, name);
+	}
+	
+	public int kickThemInTheNuts()
+	{
+		int attack = 40;
+		
+		return attack;
+	}
+	
+	public void getBlessingFromGod(int loyaltyToGod)
+	{
+		this.setHealth(this.getHealth() + 25);
 	}
 }

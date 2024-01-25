@@ -16,4 +16,12 @@ public class Pidgeotto extends Pidgey
 	{
 		super(number, name);
 	}
+	
+	@Override
+	public int flyAttack()
+	{
+		int attack = super.flyAttack() + 15;
+		
+		return attack;
+	}
 }

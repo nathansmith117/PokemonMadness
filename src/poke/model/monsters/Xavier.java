@@ -1,6 +1,8 @@
 package poke.model.monsters;
 
-public class Xavier extends Pokemon
+import poke.model.types.UnHoly;
+
+public class Xavier extends Pokemon implements UnHoly
 {
 	public Xavier()
 	{
@@ -15,5 +17,12 @@ public class Xavier extends Pokemon
 	public Xavier(int number, String name)
 	{
 		super(number, name);
+	}
+	
+	public int killThemWithKindness()
+	{
+		int attack = 50;
+		
+		return attack;
 	}
 }

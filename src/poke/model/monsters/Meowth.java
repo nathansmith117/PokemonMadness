@@ -1,6 +1,8 @@
 package poke.model.monsters;
 
-public class Meowth extends Pokemon
+import poke.model.types.Normal;
+
+public class Meowth extends Pokemon implements Normal
 {
 	public Meowth()
 	{
@@ -15,5 +17,12 @@ public class Meowth extends Pokemon
 	public Meowth(int number, String name)
 	{
 		super(number, name);
+	}
+	
+	public int kickThemInTheNuts()
+	{
+		int attack = 20;
+		
+		return attack;
 	}
 }
