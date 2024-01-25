@@ -8,16 +8,19 @@ public class Pidgey extends Pokemon implements Normal, Flying
 	public Pidgey()
 	{
 		super(16, "Pidgey");
+		setup(100, true);
 	}
 	
 	public Pidgey(String name)
 	{
 		super(16, name);
+		setup(100, true);
 	}
 	
 	public Pidgey(int number, String name)
 	{
 		super(number, name);
+		setup(100, true);
 	}
 	
 	public int kickThemInTheNuts()
