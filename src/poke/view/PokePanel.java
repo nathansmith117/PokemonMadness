@@ -19,6 +19,19 @@ public class PokePanel extends JPanel
 {
 	private Controller app;
 	
+	private SpringLayout layout;
+	
+	private JPanel fieldPanel;
+	private JTextField nameField;
+	private JTextField healthField;
+	private JTextField numberField;
+	private JTextField typeArea;
+	private JTextField evolveBox;
+	
+	private JLabel imageLabel;
+	private ImageIcon pokemonIcon;
+	private JComboBox<String> pokedexSelector;
+	
 	public PokePanel(Controller app)
 	{
 		super();
