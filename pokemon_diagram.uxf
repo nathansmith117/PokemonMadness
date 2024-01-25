@@ -1,4 +1,16 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>33</x><y>256</y><w>260</w><h>200</h></coordinates><panel_attributes>Pokemon
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <help_text/>
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>192</x>
+      <y>136</y>
+      <w>208</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Pokemon
 
 --
  - pokedexNumber :  int
@@ -6,6 +18,182 @@
  - name : String
 --
  + get()/set(...)
- + Pokemon(int, String) : Constructor
- </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>463</x><y>306</y><w>190</w><h>60</h></coordinates><panel_attributes>Meowth</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>453</x><y>406</y><w>190</w><h>70</h></coordinates><panel_attributes>Orel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>463</x><y>526</y><w>200</w><h>70</h></coordinates><panel_attributes>Vulpix</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>453</x><y>626</y><w>200</w><h>80</h></coordinates><panel_attributes>Pidgey
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>743</x><y>646</y><w>180</w><h>70</h></coordinates><panel_attributes>Pidgeotto</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>463</x><y>726</y><w>180</w><h>80</h></coordinates><panel_attributes>Xavier</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>283</x><y>346</y><w>200</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;50;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>283</x><y>426</y><w>190</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;40</additional_attributes></element><element><id>Relation</id><coordinates><x>183</x><y>446</y><w>300</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;280;110</additional_attributes></element><element><id>Relation</id><coordinates><x>163</x><y>446</y><w>310</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;290;210</additional_attributes></element><element><id>Relation</id><coordinates><x>143</x><y>446</y><w>340</w><h>380</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;320;360</additional_attributes></element><element><id>Relation</id><coordinates><x>643</x><y>686</y><w>120</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;20;100;10</additional_attributes></element></diagram>
+ + Pokemon(int, String) : constructor
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>112</y>
+      <w>208</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Meowth
+
+--
+
+--
++ Meowth() : constructor
++ Meowth(String) : constructor
++ Meowth(int, String) : constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>240</y>
+      <w>192</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Orel
+
+--
+
+--
++ Orel() : constructor
++ Orel(String) : constructor
++ Orel(int, String) : constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>536</x>
+      <y>368</y>
+      <w>216</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Vulpix
+
+--
+
+--
++ Vulpix() : constructor
++ Vulpix(String) : constructor
++ Vulpix(int, String) : constructor </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>496</y>
+      <w>208</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Pidgey
+
+--
+
+--
++ Pidgey() : constructor
++ Pidgey(String) : constructor
++ Pidgey(int, String) : constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>504</y>
+      <w>208</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Pidgeotto
+
+--
+
+--
++ Pidgeotto() : constructor
++ Pidgeotto(String) : constructor
++ Pidgeotto(int, String) : constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>544</x>
+      <y>632</y>
+      <w>200</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Xavier
+
+--
+
+--
++ Xavier() : constructor
++ Xavier(String) : constructor
++ Xavier(int, String) : constructor</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>144</y>
+      <w>168</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;130.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>272</y>
+      <w>168</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;190.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>312</x>
+      <y>288</y>
+      <w>240</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;280.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>288</y>
+      <w>264</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>288</y>
+      <w>280</w>
+      <h>464</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;330.0;560.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>536</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;30.0;70.0;10.0</additional_attributes>
+  </element>
+</diagram>
