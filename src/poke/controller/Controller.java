@@ -1,6 +1,13 @@
 package poke.controller;
 
 import poke.model.*;
+import poke.model.monsters.Meowth;
+import poke.model.monsters.Orel;
+import poke.model.monsters.Pidgeotto;
+import poke.model.monsters.Pidgey;
+import poke.model.monsters.Pokemon;
+import poke.model.monsters.Vulpix;
+import poke.model.monsters.Xavier;
 import poke.view.PokeFrame;
 import java.util.ArrayList;
 
