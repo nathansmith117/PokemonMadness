@@ -330,17 +330,6 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>216</x>
-      <y>144</y>
-      <w>152</w>
-      <h>24</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>824</x>
       <y>512</y>
       <w>128</w>
