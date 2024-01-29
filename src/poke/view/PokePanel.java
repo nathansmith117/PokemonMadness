@@ -105,6 +105,18 @@ public class PokePanel extends JPanel
 		pokedexSelector.setModel(pokeModel);
 	}
 	
+	private void updateFields(int index)
+	{
+		String[] data = app.getPokemonData(index);
+		
+		nameField.setText(data[0]);
+		boolean evolve = Boolean.parseBoolean(data[1]);
+		evolveBox.setSelected(evolve);
+		healthField.setText(data[2]);
+		numberField.setText(data[3]);
+		typesArea.setText(data[4]);
+	}
+	
 	private void setupPanel()
 	{
 		setBackground(Color.GREEN);
