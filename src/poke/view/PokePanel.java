@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
+import javax.swing.DefaultComboBoxModel;
 
 import java.awt.Color;
 import java.awt.GridLayout;
@@ -32,6 +33,7 @@ public class PokePanel extends JPanel
 	private JLabel imageLabel;
 	private ImageIcon pokemonImage;
 	private JComboBox<String> pokedexSelector;
+	private JButton updateButton;
 	
 	public PokePanel(Controller app)
 	{
@@ -45,6 +47,7 @@ public class PokePanel extends JPanel
 		this.healthField = new JTextField("Health");
 		this.nameField = new JTextField("Name");
 		this.numberField = new JTextField("Number");
+		this.updateButton = new JButton("Update");
 		
 		this.evolveBox = new JCheckBox("Pokemon can evolve?", false);
 		
@@ -55,7 +58,7 @@ public class PokePanel extends JPanel
 		this.pokemonImage = new ImageIcon();
 		this.pokedexSelector = new JComboBox<String>();
 		
-		
+		setupDropDown();
 		setupPanel();
 		setupListeners();
 		setupLayout();
@@ -80,6 +83,28 @@ public class PokePanel extends JPanel
 		repaint();
 	}
 	
+	private void collectInput()
+	{
+		String name = nameField.getText();
+		String health = healthField.getText();
+		boolean evolve = evolveBox.isSelected();
+		int selectedPokemonIndex = pokedexSelector.getSelectedIndex();
+		
+		if (app.validateNumber(health))
+		{
+			int healthValue = Integer.parseInt(health);
+			
+			app.updateCurrentPokemon(name, selectedPokemonIndex, healthValue, evolve);
+		}
+	}
+	
+	private void setupDropDown()
+	{
+		String [] pokeData = app.buildPokedexText();
+		DefaultComboBoxModel<String> pokeModel = new DefaultComboBoxModel<String>(pokeData);
+		pokedexSelector.setModel(pokeModel);
+	}
+	
 	private void setupPanel()
 	{
 		setBackground(Color.GREEN);
@@ -100,6 +125,7 @@ public class PokePanel extends JPanel
 		fieldPanel.add(numberField);
 		fieldPanel.add(evolveBox);
 		fieldPanel.add(typesPane);
+		fieldPanel.add(updateButton);
 		
 		// PokePanel stuff
 		this.add(fieldPanel);
@@ -111,7 +137,7 @@ public class PokePanel extends JPanel
 	
 	private void setupListeners()
 	{
-		
+		updateButton.addActionListener(click -> collectInput());
 	}
 	
 	private void setupLayout()
