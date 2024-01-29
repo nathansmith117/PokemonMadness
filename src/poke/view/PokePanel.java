@@ -74,7 +74,7 @@ public class PokePanel extends JPanel
 		typesPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 		
 		//fieldPanel work
-		fieldPanel.add(healthField));
+		fieldPanel.add(healthField);
 		fieldPanel.add(nameField);
 		fieldPanel.add(numberField);
 		fieldPanel.add(evolveBox);
@@ -84,7 +84,6 @@ public class PokePanel extends JPanel
 		this.add(fieldPanel);
 		this.add(imageLabel);
 		this.add(pokedexSelector);
-		
 	}
 	
 	private void setupListeners()
@@ -94,6 +93,17 @@ public class PokePanel extends JPanel
 	
 	private void setupLayout()
 	{
+		layout.putConstraint(SpringLayout.WEST, fieldPanel, -250, SpringLayout.EAST, this);
+		layout.putConstraint(SpringLayout.EAST, fieldPanel, -25, SpringLayout.EAST, this);
+		layout.putConstraint(SpringLayout.NORTH, fieldPanel, 25, SpringLayout.NORTH, this);
+		layout.putConstraint(SpringLayout.SOUTH, fieldPanel, -25, SpringLayout.SOUTH, this);
 		
+		layout.putConstraint(SpringLayout.NORTH, imageLabel, 150, SpringLayout.NORTH, this);
+		layout.putConstraint(SpringLayout.WEST, imageLabel, 150, SpringLayout.WEST, this);
+		layout.putConstraint(SpringLayout.EAST, imageLabel, -100, SpringLayout.WEST, fieldPanel);
+		
+		layout.putConstraint(SpringLayout.WEST, pokedexSelector, 150, SpringLayout.WEST, this);
+		layout.putConstraint(SpringLayout.EAST, pokedexSelector, -150, SpringLayout.WEST, fieldPanel);
+		layout.putConstraint(SpringLayout.SOUTH, pokedexSelector, -150, SpringLayout.SOUTH, this);
 	}
 }
