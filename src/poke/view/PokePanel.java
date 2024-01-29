@@ -61,6 +61,25 @@ public class PokePanel extends JPanel
 		setupLayout();
 	}
 	
+	private void updateDisplay(String name)
+	{
+		String path = "/poke/view/images/";
+		String defaultName = "Error";
+		String extension = ".png";
+		
+		try
+		{
+			pokemonImage = new ImageIcon(getClass().getResource(path + name + extension));
+		}
+		catch (NullPointerException error)
+		{
+			pokemonImage = new ImageIcon(getClass().getResource(path + defaultName + extension));
+		}
+		
+		imageLabel.setIcon(pokemonImage);
+		repaint();
+	}
+	
 	private void setupPanel()
 	{
 		setBackground(Color.GREEN);
@@ -72,6 +91,8 @@ public class PokePanel extends JPanel
 		typesPane.setViewportView(typesArea);
 		typesPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
 		typesPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		imageLabel.setVerticalTextPosition(JLabel.BOTTOM);
+		imageLabel.setHorizontalTextPosition(JLabel.CENTER);
 		
 		//fieldPanel work
 		fieldPanel.add(healthField);
@@ -84,6 +105,8 @@ public class PokePanel extends JPanel
 		this.add(fieldPanel);
 		this.add(imageLabel);
 		this.add(pokedexSelector);
+		
+		updateDisplay("");
 	}
 	
 	private void setupListeners()
