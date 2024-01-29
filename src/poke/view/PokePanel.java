@@ -117,6 +117,17 @@ public class PokePanel extends JPanel
 		typesArea.setText(data[4]);
 	}
 	
+	private void updatePokemonScreen()
+	{
+		String name = pokedexSelector.getSelectedItem().toString();
+		int nameStart = name.indexOf(": ") + 2;
+		name = name.substring(nameStart);
+		
+		imageLabel.setText("This is: " + name);
+		updateDisplay(name);
+		updateFields(pokedexSelector.getSelectedIndex());
+	}
+	
 	private void setupPanel()
 	{
 		setBackground(Color.GREEN);
@@ -150,6 +161,7 @@ public class PokePanel extends JPanel
 	private void setupListeners()
 	{
 		updateButton.addActionListener(click -> collectInput());
+		pokedexSelector.addActionListener(select -> updatePokemonScreen());
 	}
 	
 	private void setupLayout()
