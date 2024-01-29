@@ -40,7 +40,7 @@ public class PokePanel extends JPanel
 		
 		this.layout = new SpringLayout();
 		
-		this.fieldPanel = new JPanel(new GridLayout(0, 2));
+		this.fieldPanel = new JPanel(new GridLayout(0, 1));
 		
 		this.healthField = new JTextField("Health");
 		this.nameField = new JTextField("Name");
@@ -64,6 +64,27 @@ public class PokePanel extends JPanel
 	private void setupPanel()
 	{
 		setBackground(Color.GREEN);
+		setLayout(layout);
+		
+		//component settings
+		numberField.setEnabled(false);
+		typesArea.setEnabled(false);
+		typesPane.setViewportView(typesArea);
+		typesPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+		typesPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		
+		//fieldPanel work
+		fieldPanel.add(healthField));
+		fieldPanel.add(nameField);
+		fieldPanel.add(numberField);
+		fieldPanel.add(evolveBox);
+		fieldPanel.add(typesPane);
+		
+		// PokePanel stuff
+		this.add(fieldPanel);
+		this.add(imageLabel);
+		this.add(pokedexSelector);
+		
 	}
 	
 	private void setupListeners()
