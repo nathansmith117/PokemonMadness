@@ -22,7 +22,7 @@ public class Controller
 	public Controller()
 	{
 		this.pokedex = new ArrayList<Pokemon>();
-		this.dataFile = "";
+		this.dataFile = "saved.pokemon";
 		
 		createPokedex();
 		
@@ -31,7 +31,12 @@ public class Controller
 	
 	public void start()
 	{
+		ArrayList<Pokemon> saved = IOController.loadData(dataFile, this);
 		
+		if (saved != null && saved.size() > 0)
+		{
+			this.pokedex = saved;
+		}
 	}
 	
 	private void createPokedex()
@@ -111,5 +116,10 @@ public class Controller
 	public PokeFrame getWindow()
 	{
 		return window;
+	}
+	
+	public void save()
+	{
+		IOController.saveData(dataFile, pokedex, this);
 	}
 }
