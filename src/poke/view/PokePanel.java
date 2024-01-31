@@ -34,6 +34,7 @@ public class PokePanel extends JPanel
 	private ImageIcon pokemonImage;
 	private JComboBox<String> pokedexSelector;
 	private JButton updateButton;
+	private JButton saveButton;
 	
 	public PokePanel(Controller app)
 	{
@@ -47,7 +48,6 @@ public class PokePanel extends JPanel
 		this.healthField = new JTextField("Health");
 		this.nameField = new JTextField("Name");
 		this.numberField = new JTextField("Number");
-		this.updateButton = new JButton("Update");
 		
 		this.evolveBox = new JCheckBox("Pokemon can evolve?", false);
 		
@@ -57,6 +57,8 @@ public class PokePanel extends JPanel
 		this.imageLabel = new JLabel("image");
 		this.pokemonImage = new ImageIcon();
 		this.pokedexSelector = new JComboBox<String>();
+		this.updateButton = new JButton("Update");
+		this.saveButton = new JButton("Save");
 		
 		setupDropDown();
 		setupPanel();
@@ -149,6 +151,7 @@ public class PokePanel extends JPanel
 		fieldPanel.add(evolveBox);
 		fieldPanel.add(typesPane);
 		fieldPanel.add(updateButton);
+		fieldPanel.add(saveButton);
 		
 		// PokePanel stuff
 		this.add(fieldPanel);
@@ -162,6 +165,7 @@ public class PokePanel extends JPanel
 	{
 		updateButton.addActionListener(click -> collectInput());
 		pokedexSelector.addActionListener(select -> updatePokemonScreen());
+		saveButton.addActionListener(click -> app.save());
 	}
 	
 	private void setupLayout()
