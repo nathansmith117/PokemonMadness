@@ -64,9 +64,6 @@ public class PokePanel extends JPanel
 		setupPanel();
 		setupListeners();
 		setupLayout();
-		
-		// Fix annoying little thingy.
-		updatePokemonScreen();
 	}
 	
 	private void updateDisplay(String name)
