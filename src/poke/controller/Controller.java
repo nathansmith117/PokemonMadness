@@ -107,4 +107,9 @@ public class Controller
 		
 		return currentPokemonInfo;
 	}
+	
+	public PokeFrame getWindow()
+	{
+		return window;
+	}
 }
