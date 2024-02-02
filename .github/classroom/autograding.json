@@ -1,0 +1,124 @@
+{
+  "tests": [
+    {
+      "name": "Runner test",
+      "setup": "",
+      "run": "gradle test --tests RunnerTest.testMain",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "IOController methods",
+      "setup": "",
+      "run": "gradle test --tests IOControllerTest.testMethods",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Controller Constructor and Data members",
+      "setup": "",
+      "run": "gradle test --tests ControllerTest.testConstructorAndDataMembers",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Controller Methods",
+      "setup": "",
+      "run": "gradle test --tests ControllerTest.testMethods",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 55
+    },
+    {
+      "name": "PokeFrame Test",
+      "setup": "",
+      "run": "gradle test --tests FrameTest.testPokeFrame",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "PokePanel structure",
+      "setup": "",
+      "run": "gradle test --tests PanelTest.testStructure",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "PokePanel methods",
+      "setup": "",
+      "run": "gradle test --tests PanelTest.testRequiredMethods",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Pokemon exist",
+      "setup": "",
+      "run": "gradle test --tests PokemonTest.testPokemonExist",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Pokemon types exist",
+      "setup": "",
+      "run": "gradle test --tests PokemonTest.testPokemonTypesExist",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Pokemon types implemented",
+      "setup": "",
+      "run": "gradle test --tests PokemonTest.testPokemonTypesImplemented",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 30
+    },
+    {
+      "name": "Pokemon Image Structure",
+      "setup": "",
+      "run": "gradle test --tests ImageTest.testStructure",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Pokemon All Images",
+      "setup": "",
+      "run": "gradle test --tests ImageTest.testAllImages",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
