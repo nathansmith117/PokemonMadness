@@ -5,12 +5,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>196</x>
-      <y>119</y>
+      <x>168</x>
+      <y>98</y>
       <w>182</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>Pokemon
+bg=cyan
 
 --
  - pokedexNumber :  int
@@ -25,8 +26,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
-      <y>364</y>
+      <x>14</x>
+      <y>343</y>
       <w>182</w>
       <h>105</h>
     </coordinates>
@@ -43,8 +44,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>189</x>
-      <y>497</y>
+      <x>161</x>
+      <y>476</y>
       <w>168</w>
       <h>98</h>
     </coordinates>
@@ -61,8 +62,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>308</x>
-      <y>371</y>
+      <x>280</x>
+      <y>350</y>
       <w>189</w>
       <h>98</h>
     </coordinates>
@@ -79,8 +80,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>574</x>
-      <y>343</y>
+      <x>546</x>
+      <y>322</y>
       <w>182</w>
       <h>98</h>
     </coordinates>
@@ -97,12 +98,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>504</y>
+      <x>644</x>
+      <y>483</y>
       <w>182</w>
       <h>91</h>
     </coordinates>
     <panel_attributes>Pidgeotto
+bg=pink
 
 --
 
@@ -115,8 +117,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>826</x>
-      <y>238</y>
+      <x>798</x>
+      <y>217</y>
       <w>175</w>
       <h>91</h>
     </coordinates>
@@ -133,8 +135,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>42</x>
-      <y>252</y>
+      <x>14</x>
+      <y>231</y>
       <w>168</w>
       <h>126</h>
     </coordinates>
@@ -144,8 +146,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>252</y>
+      <x>224</x>
+      <y>231</y>
       <w>21</w>
       <h>259</h>
     </coordinates>
@@ -155,8 +157,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>301</x>
-      <y>252</y>
+      <x>273</x>
+      <y>231</y>
       <w>84</w>
       <h>133</h>
     </coordinates>
@@ -166,8 +168,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>364</x>
-      <y>252</y>
+      <x>336</x>
+      <y>231</y>
       <w>224</w>
       <h>126</h>
     </coordinates>
@@ -177,8 +179,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>371</x>
-      <y>182</y>
+      <x>343</x>
+      <y>161</y>
       <w>469</w>
       <h>119</h>
     </coordinates>
@@ -188,8 +190,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>749</x>
-      <y>392</y>
+      <x>721</x>
+      <y>371</y>
       <w>63</w>
       <h>126</h>
     </coordinates>
@@ -199,12 +201,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
-      <y>735</y>
+      <x>140</x>
+      <y>714</y>
       <w>161</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>/Normal/
+bg=gray
 --
 +  kickThemInTheNuts() : int</panel_attributes>
     <additional_attributes/>
@@ -212,12 +215,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>378</x>
-      <y>735</y>
+      <x>350</x>
+      <y>714</y>
       <w>168</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>/Holy/
+bg=light_gray
 --
 + getBlessingFromGod(int) : void</panel_attributes>
     <additional_attributes/>
@@ -225,12 +229,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>567</x>
-      <y>735</y>
+      <x>539</x>
+      <y>714</y>
       <w>119</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>/Fire/
+bg=red
 --
 + fartFire() : int</panel_attributes>
     <additional_attributes/>
@@ -238,12 +243,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>707</x>
-      <y>742</y>
+      <x>679</x>
+      <y>721</y>
       <w>119</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>/Flying/
+bg=yellow
 --
 + flyAttack() : int</panel_attributes>
     <additional_attributes/>
@@ -251,12 +257,13 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>840</x>
-      <y>735</y>
+      <x>812</x>
+      <y>714</y>
       <w>161</w>
       <h>63</h>
     </coordinates>
     <panel_attributes>/UnHoly/
+bg=magenta
 --
 + killThemWithKindness() : int</panel_attributes>
     <additional_attributes/>
@@ -264,8 +271,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>35</x>
-      <y>462</y>
+      <x>7</x>
+      <y>441</y>
       <w>154</w>
       <h>287</h>
     </coordinates>
@@ -275,8 +282,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>294</x>
-      <y>588</y>
+      <x>266</x>
+      <y>567</y>
       <w>112</w>
       <h>161</h>
     </coordinates>
@@ -286,8 +293,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>252</x>
-      <y>434</y>
+      <x>224</x>
+      <y>413</y>
       <w>343</w>
       <h>315</h>
     </coordinates>
@@ -297,8 +304,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>476</x>
-      <y>462</y>
+      <x>448</x>
+      <y>441</y>
       <w>119</w>
       <h>287</h>
     </coordinates>
@@ -308,8 +315,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>588</x>
-      <y>434</y>
+      <x>560</x>
+      <y>413</y>
       <w>140</w>
       <h>322</h>
     </coordinates>
@@ -319,8 +326,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>854</x>
-      <y>322</y>
+      <x>826</x>
+      <y>301</y>
       <w>35</w>
       <h>427</h>
     </coordinates>
@@ -330,8 +337,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>588</y>
+      <x>182</x>
+      <y>567</y>
       <w>49</w>
       <h>161</h>
     </coordinates>
